@@ -2176,6 +2176,11 @@ ul.banner-social-icon li a:hover {
     padding: 41px 0;
 }
 
+.footer-1-top-content .logo {
+    margin-top: 25px;
+}
+
+
 .footer-1-social-icon a {
     color: #fff;
     width: 50px;
@@ -6244,8 +6249,10 @@ li.accordion.active-block {
     }
 
     .footer-1-top-content .logo {
+        margin-top: 25px;
         margin-bottom: 30px;
     }
+
 
     .appointment-form-widget,
     .tp-default-widget,
