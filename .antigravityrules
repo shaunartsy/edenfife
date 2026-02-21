@@ -1,0 +1,1 @@
+Always use 'cmd /c' for shell commands and terminate processes immediately after execution.

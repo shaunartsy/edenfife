@@ -1,0 +1,373 @@
+/*
+ * roundness.css — Eden Fife Healthcare
+ * Applies soft rounded corners consistently across the entire site.
+ * Add this LAST in the <head> so it overrides base styles where needed.
+ */
+
+/* =========================================================
+   1. GLOBAL IMAGES — round all standalone images
+   ========================================================= */
+
+img {
+  border-radius: 12px;
+}
+
+/* Exceptions: icons/logos/shapes that should stay sharp */
+.logo img,
+.nav-logo img,
+.footer-1-top .logo img,
+.banner-shape img,
+.about-1-shape-1 img,
+.about-1-shape-2 img,
+.why-chooseus-1-shape img,
+.testimonial-1-shape-1 img,
+.testimonial-1-shape-2 img,
+.contact-1-shape-1 img,
+.contact-1-shape-2 img,
+.mobile-nav-toggler img {
+  border-radius: 0;
+}
+
+/* Profile / avatar images stay circular */
+.team-1-image img,
+.team-2-image img,
+.testimonial-1-author-thumb img,
+.testimonial-2-thumb img {
+  border-radius: 50%;
+}
+
+/* =========================================================
+   2. HEADER & NAVIGATION
+   ========================================================= */
+
+/* Main header wrapper gets a very subtle bottom radius on scroll */
+.main-header .header-upper {
+  border-radius: 0 0 20px 20px;
+}
+
+/* Dropdown menus — already have radius but make consistent */
+.main-menu .navigation>li>ul {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.main-menu .navigation>li>ul>li>ul {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* =========================================================
+   3. BANNER / HERO SECTION
+   ========================================================= */
+
+/* Video banner — clip to rounded bottom */
+.banner-section {
+  border-radius: 0 0 40px 40px;
+  overflow: hidden;
+}
+
+/* =========================================================
+   4. SERVICE CARDS
+   ========================================================= */
+
+/* service-1-block — round cards and give text room to breathe */
+.service-1-block {
+  border-radius: 30px !important;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+}
+
+/* Ensure hover pseudo-elements respect the rounded corners */
+.service-1-block:before,
+.service-1-block:after {
+  border-radius: 30px !important;
+}
+
+/* Change tilted hover background from pink to light green */
+.service-1-block:before {
+  background: #A8D97A !important;
+}
+
+/* Service 2 blocks */
+.service-2-block {
+  border-radius: 30px !important;
+  overflow: hidden;
+}
+
+.service-2-image {
+  border-radius: 30px 30px 0 0 !important;
+  overflow: hidden;
+}
+
+/* Service detail image boxes */
+.image-box-1-image img {
+  border-radius: 20px;
+}
+
+.image-box-1-content {
+  border-radius: 0 0 20px 20px;
+  overflow: hidden;
+}
+
+/* =========================================================
+   5. ABOUT SECTION
+   ========================================================= */
+
+.about-1-image-1 img {
+  border-radius: 30px;
+}
+
+.about-1-video-area {
+  border-radius: 30px !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+/* =========================================================
+   6. FUNDRAISE / COMMITMENT CARDS
+   ========================================================= */
+
+/* fundraise-1-image top + fundraise-1-content bottom already set ✓ */
+/* Wrap the whole block together */
+.fundraise-1-block {
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+/* =========================================================
+   7. WHY CHOOSE US
+   ========================================================= */
+
+.why-chooseus-1-image img {
+  border-radius: 30px !important;
+}
+
+/* Featured/highlighted block border */
+.why-chooseus-1-block:nth-child(2) {
+  border-radius: 20px !important;
+}
+
+/* =========================================================
+   8. VIDEO BACKGROUND SECTION
+   ========================================================= */
+
+section.video-1-section {
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+/* =========================================================
+   9. TEAM SECTION
+   ========================================================= */
+
+/* Team wrapper background card */
+.team-1-wrapper {
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+/* =========================================================
+   10. TESTIMONIAL BLOCKS
+   ========================================================= */
+
+/* Explicitly round individual testimonial cards */
+.testimonial-1-block {
+  border-radius: 30px !important;
+  overflow: hidden;
+}
+
+/* Swiper wrapper */
+.testimonial-1-block-wrap {
+  border-radius: 20px;
+  overflow: visible;
+}
+
+/* =========================================================
+   11. BLOG CARDS
+   ========================================================= */
+
+/* blog-1-image top + blog-1-bottom-content bottom already set ✓ */
+.blog-1-block {
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+/* Blog date badge */
+.blog-1-date {
+  border-radius: 40px !important;
+}
+
+/* Standard/detail blog images */
+.blog-1-image img {
+  border-radius: 30px 30px 0 0;
+}
+
+/* =========================================================
+   12. CONTACT SECTION
+   ========================================================= */
+
+.contact-1-image img {
+  border-radius: 30px 30px 0 0 !important;
+}
+
+/* Contact form inputs — already 30px ✓ */
+
+/* =========================================================
+   13. SIDEBAR WIDGETS (service detail pages, etc.)
+   ========================================================= */
+
+.tp-default-widget,
+.category-widget {
+  border-radius: 30px !important;
+}
+
+ul.category-widget-list a {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.contact-widget {
+  border-radius: 30px !important;
+}
+
+.event-info-widget {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.service-details-download-wrap {
+  border-radius: 20px !important;
+}
+
+/* =========================================================
+   14. FAQ ACCORDION
+   ========================================================= */
+
+.accordion-box .block {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* =========================================================
+   15. EVENT CARDS
+   ========================================================= */
+
+.event-1-image {
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
+}
+
+.event-1-bottom-content {
+  border-radius: 0 0 20px 20px;
+  overflow: hidden;
+}
+
+.event-1-block {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.event-2-block {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.event-2-image {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* =========================================================
+   16. FUNFACT / STATISTICS WRAPPER
+   ========================================================= */
+
+.funfact-1-wrapper {
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+/* =========================================================
+   17. ESTIMATE / CTA FORM
+   ========================================================= */
+
+.estimate-form-1-wrap {
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+/* =========================================================
+   18. HIDDEN SIDEBAR
+   ========================================================= */
+
+.hidden-sidebar {
+  border-radius: 20px 0 0 20px;
+}
+
+.hidden-sidebar .news-widget .image {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.hidden-sidebar .news-widget .image img {
+  border-radius: 10px;
+}
+
+/* =========================================================
+   19. FOOTER
+   ========================================================= */
+
+/* Footer top section */
+.footer-1-top {
+  border-radius: 30px 30px 0 0;
+}
+
+/* =========================================================
+   20. PAGE TITLE / BREADCRUMB
+   ========================================================= */
+
+.page-title {
+  border-radius: 0 0 30px 30px;
+  overflow: hidden;
+}
+
+/* =========================================================
+   21. FORMS — newsletter, estimate, contact
+   ========================================================= */
+
+form.newsletter-1-form input[type="text"],
+form.newsletter-1-form input[type="email"] {
+  border-radius: 20px !important;
+}
+
+form.estimate-form-1-form input {
+  border-radius: 20px !important;
+}
+
+/* =========================================================
+   22. SKILL SECTION IMAGE
+   ========================================================= */
+
+.skill-1-image img {
+  border-radius: 20px;
+}
+
+/* =========================================================
+   23. SINGLE TEAM / BLOG / SERVICE DETAIL IMAGES
+   ========================================================= */
+
+.faq-1-image img {
+  border-radius: 20px;
+}
+
+/* =========================================================
+   24. CLIENT LOGO SECTION
+   ========================================================= */
+
+.client-logo-1 {
+  border-radius: 20px;
+}
+
+.client-logo-1-image img {
+  border-radius: 8px;
+}
