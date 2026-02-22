@@ -509,3 +509,45 @@ form.estimate-form-1-form input {
 .client-logo-1-image img {
   border-radius: 8px;
 }
+
+/* =========================================================
+   25. CAREER PAGE FORMS
+   ========================================================= */
+
+.form-alt-2 form input[type="text"],
+.form-alt-2 form input[type="email"],
+.form-alt-2 form input[type="password"],
+.form-alt-2 form input[type="tel"],
+.form-alt-2 form input[type="number"],
+.form-alt-2 form input[type="file"],
+.form-alt-2 form select,
+.form-alt-2 form textarea,
+.form-alt-3 form input[type="text"],
+.form-alt-3 form input[type="email"],
+.form-alt-3 form input[type="tel"],
+.form-alt-3 form textarea {
+  border-radius: 45px !important;
+  width: 100% !important;
+  display: block;
+}
+
+.form-alt-2 .form-gorup,
+.form-alt-2 .form-group.text-center {
+  text-align: center;
+}
+
+/* Custom file input styling */
+.form-alt-2 form input[type="file"] {
+  border: none !important;
+  background: transparent !important;
+  padding-top: 15px;
+  cursor: pointer;
+}
+
+/* =========================================================
+   26. CONTACT PAGE
+   ========================================================= */
+
+.contact-map iframe {
+  border-radius: 30px;
+}
