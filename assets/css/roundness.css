@@ -5,6 +5,98 @@
  */
 
 /* =========================================================
+   0. SITE FONTS AND HERO FIX
+   ========================================================= */
+
+/* Fix missing Next.js font variables */
+:root {
+  --poppins: "__PT_Sans_438d47", "__PT_Sans_Fallback_438d47", sans-serif;
+  --pT_Serif: "__PT_Serif_7dbc8c", "__PT_Serif_Fallback_7dbc8c", serif;
+}
+
+body {
+  font-family: var(--poppins) !important;
+}
+
+/* Recovered Next.js styled-jsx for Hero Video Banner */
+.video-banner-slide {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+  /* Fits exactly on any landing screen */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Ensure padding pushes content down appropriately, similar to what the original slider had */
+.video-banner-slide .content-outer {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.video-banner-slide .content-box {
+  display: flex;
+  justify-content: center;
+}
+
+.banner-bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: 0;
+}
+
+.banner-video-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.banner-shape {
+  z-index: 3;
+}
+
+/* Animations and layout recovered */
+.banner-inner-visible {
+  opacity: 1 !important;
+  transform: translateX(0) !important;
+  max-width: 50%;
+  /* Less than half the screen */
+  text-align: center;
+  /* Center horizontally */
+  margin: 0 auto;
+}
+
+.banner-inner-visible h4,
+.banner-inner-visible h1,
+.banner-inner-visible .text {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: translateY(0) !important;
+}
+
+.banner-linkbox-visible {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: scale(1) translateY(0) !important;
+  margin-top: 20px;
+}
+
+/* =========================================================
    1. GLOBAL IMAGES — round all standalone images
    ========================================================= */
 
