@@ -445,6 +445,16 @@ ul.category-widget-list a {
 .page-title {
   border-radius: 0 0 30px 30px;
   overflow: hidden;
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+.cta-1-bg {
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
 }
 
 /* =========================================================
