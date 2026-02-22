@@ -110,6 +110,11 @@ body {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
+/* Recovered Scroll Animations (WOW.js replacement) */
+.wow:not(.animated) {
+  visibility: hidden;
+}
+
 /* =========================================================
    1. GLOBAL IMAGES — round all standalone images
    ========================================================= */
