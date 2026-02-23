@@ -5,14 +5,14 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
   <title>
     Eden Fife Healthcare | High-Quality Home &amp; Community Support
   </title>
   <meta name="description"
     content="Eden Fife Healthcare provides compassionate, person-centered home and community support services for older adults across Fife, Scotland." />
   <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="66x59" />
-  <link rel="stylesheet" href="assets/css/roundness.css" />
+  <link rel="stylesheet" href="/assets/css/roundness.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
 </head>
@@ -60,13 +60,13 @@
           <div class="inner-container d-flex align-items-center justify-content-between">
             <div class="logo-box">
               <div class="logo">
-                <a href="/"><img src="assets/images/logo.png" alt="" /></a>
+                <a href="/"><img src="/assets/images/logo.png" alt="" /></a>
               </div>
             </div>
             <div class="middle-column">
               <div class="nav-outer">
                 <div class="mobile-nav-toggler">
-                  <img src="assets/images/icons/icon-bar.png" alt="" />
+                  <img src="/assets/images/icons/icon-bar.png" alt="" / loading="lazy">
                 </div>
                 <nav class="main-menu navbar-expand-md navbar-light">
                   <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
@@ -96,13 +96,13 @@
             <div class="inner-container d-flex align-items-center justify-content-between">
               <div class="logo-box">
                 <div class="logo">
-                  <a href="/"><img src="assets/images/logo.png" alt="" /></a>
+                  <a href="/"><img src="/assets/images/logo.png" alt="" /></a>
                 </div>
               </div>
               <div class="middle-column">
                 <div class="nav-outer">
                   <div class="mobile-nav-toggler">
-                    <img src="assets/images/icons/icon-bar-2.png" alt="" />
+                    <img src="/assets/images/icons/icon-bar-2.png" alt="" / loading="lazy">
                   </div>
                   <nav class="main-menu navbar-expand-md navbar-light">
                     <ul class="navigation">
@@ -130,7 +130,7 @@
         <div class="close-btn"><i class="fal fa-times"></i></div>
         <nav class="menu-box">
           <div class="nav-logo">
-            <a href="/"><img src="assets/images/logo-light.png" alt="" /></a>
+            <a href="/"><img src="/assets/images/logo-light.png" alt="" /></a>
           </div>
           <div class="menu-outer">
             <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
@@ -173,7 +173,7 @@
           <span class="fal fa-times"></span>
         </div>
         <div class="logo">
-          <a href="/"><img src="assets/images/logo.png" alt="" /></a>
+          <a href="/"><img src="/assets/images/logo.png" alt="" /></a>
         </div>
         <div class="content">
           <div class="about-widget-two sidebar-widget">
@@ -188,7 +188,7 @@
             <div class="widget-title">News &amp; Updates</div>
             <div class="post-wrapper">
               <div class="image">
-                <a href="/news-details"><img src="assets/images/resource/blog-1.jpg" alt="" /></a>
+                <a href="/news-details"><img src="/assets/images/resource/blog-1.jpg" alt="" / loading="lazy"></a>
               </div>
               <div class="category">Senior Care</div>
               <h4>
@@ -197,7 +197,7 @@
             </div>
             <div class="post-wrapper">
               <div class="image">
-                <a href="/news-details"><img src="assets/images/resource/blog-2.jpg" alt="" /></a>
+                <a href="/news-details"><img src="/assets/images/resource/blog-2.jpg" alt="" / loading="lazy"></a>
               </div>
               <div class="category">Senior Care</div>
               <h4>
@@ -216,195 +216,134 @@
         </div>
       </div>
     </section>
-    <div class="page-title" style="background-image: url(assets/images/background/page-title.jpg)">
+    <div class="page-title" style="background-image: url(/assets/images/background/page-title.jpg)">
       <div class="auto-container">
-        <h1>Service Details</h1>
+        <h1>My Account</h1>
       </div>
     </div>
     <div class="bredcrumb-wrap">
       <div class="auto-container">
         <ul class="bredcrumb-list">
           <li><a href="/">Home</a></li>
-          <li>Service Details</li>
+          <li>My Account</li>
         </ul>
       </div>
     </div>
-    <section class="section-padding">
-      <div class="auto-container">
-        <div class="row">
-          <div class="col-lg-4 pe-lg-60">
-            <div class="category-widget">
-              <h4 class="category-widget-title">All Services</h4>
-              <ul class="category-widget-list">
-                <li>
-                  <a href="/assisted-living">Assisted Living <i class="icon-40"></i></a>
-                </li>
-                <li class="active">
-                  <a href="/resident-care">Resident Care <i class="icon-40"></i></a>
-                </li>
-                <li>
-                  <a href="/medical-health">Medicale &amp; Health <i class="icon-40"></i></a>
-                </li>
-                <li>
-                  <a href="/nursing-care">Nursing Care <i class="icon-40"></i></a>
-                </li>
-                <li>
-                  <a href="/personal-care">Personal Care <i class="icon-40"></i></a>
-                </li>
-                <li>
-                  <a href="/memory-care">Memory Care <i class="icon-40"></i></a>
-                </li>
-              </ul>
+    <div>
+      <section class="myaccount-section">
+        <div class="auto-container">
+          <div class="row clearfix">
+            <div class="col-lg-6 col-md-12 col-sm-12 column">
+              <div class="login-inner">
+                <h3>Login</h3>
+                <form class="login-form" action="account" method="post">
+                  <div class="form-group">
+                    <i class="fas fa-user"></i><input type="text" placeholder="Your Name*" required="" name="name" />
+                  </div>
+                  <div class="form-group">
+                    <i class="far fa-envelope"></i><input type="email" placeholder="Emai Address*" required=""
+                      name="email" />
+                  </div>
+                  <div class="form-group">
+                    <i class="fas fa-lock-open"></i><input type="password" placeholder="Enter Password" required=""
+                      name="password" />
+                  </div>
+                  <div class="form-group btn-box">
+                    <button type="submit" class="theme-btn btn-style-one">
+                      <span class="btn-title">Login</span>
+                    </button>
+                  </div>
+                  <div class="form-group">
+                    <div class="custom-controls-stacked">
+                      <label class="custom-control material-checkbox"><input type="checkbox"
+                          class="material-control-input" /><span class="material-control-indicator"></span><span
+                          class="description">Remember Me</span></label>
+                    </div>
+                  </div>
+                </form>
+                <ul class="other-option clearfix">
+                  <li>
+                    <p>Or login with</p>
+                  </li>
+                  <li>
+                    <a href="/account"><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="/account"><i class="fab fa-google-plus-g"></i></a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="contact-widget">
-              <h4 class="contact-widget-title">
-                Do You Need <br />
-                Any <span>Help?</span>
-              </h4>
-              <div class="contact-widget-icon"><i class="icon-41"></i></div>
-              <div class="contact-widget-bottom-info">
-                <p class="contact-widget-mail">
-                  <a href="mailto:example@lovegiver.com">example@lovegiver.com</a>
-                </p>
-                <h3 class="contact-widget-phone">
-                  <a href="tel:(+91) 333 666 0021">(+91) 333 666 0021</a>
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-8">
-            <div class="service-details">
-              <div class="service-details-image mb_60">
-                <img src="assets/images/resource/service-7.jpg" alt="" />
-              </div>
-              <h2 class="service-details-title mb_20">Resident Care</h2>
-              <p class="service-details-desc mb_20">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                et enim justo, in mauris posuere dolor. Dolor felis sapien sit
-                egestas. Ut venenatis faucibus non sed faucibus mauris
-                ultricies. Cras varius proin amet vehicula magna. Ultricies
-                gravida vel volutpat sed. Platea sed fames at egestas amet
-                feugiat laoreet sed potenti integer. Viverra at maecenas
-                convallis condimentum egestas nunc sagittis eu. Semper
-                faucibus facilisis vitae sollicitudin.
-              </p>
-              <p class="service-details-desc mb_70">
-                Fringilla mauris magna sit elementum elit. Facilisi lacus,
-                pharetra quam eu urna amet aenean. Nunc mattis vitae tellus
-                bibendum a eu, nunc. Consequat commodo ac cursus in donec orci
-                tempus. Massa sed sit faucibus neque habitant consequat.
-              </p>
-              <div class="row mb_30">
-                <div class="col-md-6">
-                  <h4 class="service-details-title2 mb_15">Overview</h4>
-                  <p class="service-details-desc mb_20">
-                    Mauris magna sit elementum elit. Facilis etra lacusacphar
-                    etra quam eu urna amet aenean Nunc mattis vitae tellus
-                    bibendum.
-                  </p>
-                  <ul class="service-details-lsit mb_30">
-                    <li>Holiday Trash &amp; Recycling</li>
-                    <li>Things To Do In Govarnex</li>
-                    <li>Rent a Picnic Shelter</li>
-                    <li>Contact City Action Center</li>
-                  </ul>
-                </div>
-                <div class="col-md-6">
-                  <div class="service-details-image mb_30">
-                    <img src="assets/images/resource/service-8.jpg" alt="" />
+            <div class="col-lg-6 col-md-12 col-sm-12 column">
+              <div class="register-inner">
+                <h3>Register</h3>
+                <form class="register-form" action="account" method="post">
+                  <div class="form-group">
+                    <i class="fas fa-user"></i><input type="text" placeholder="Your Name*" required="" name="name" />
                   </div>
-                </div>
-              </div>
-              <h4 class="service-details-title2 mb_20">Benefits</h4>
-              <p class="service-details-desc mb_30">
-                Enim justo, in mauris posuere dolor. Dolor felis sapien sit
-                egestas. Ut venenatis faucibus non sed faucibus mauris
-                ultricies. Cras varius proin amet vehicula magna. Ultricies
-                gravida vel volutpat sed. Platea sed fames at egestas amet
-                feugiat laoreet sed potenti integer.
-              </p>
-              <div class="row mb_40">
-                <div class="col-md-6">
-                  <div class="service-details-icon-box hvr-zoom-2-wrap d-flex">
-                    <div class="service-details-icon-box-icon hvr-zoom-2 hvr-zoom-2-dark">
-                      <i class="icon-42"></i>
-                    </div>
-                    <div class="service-details-icon-box-content">
-                      <h4 class="service-details-icon-box-title mb_10">
-                        Hospice Care
-                      </h4>
-                      <p class="service-details-icon-box-desc">
-                        Mauris magna sit elementum facilis <br />etra
-                        lacusacphar.
-                      </p>
-                    </div>
+                  <div class="form-group">
+                    <i class="far fa-envelope"></i><input type="email" placeholder="Emai Address*" required=""
+                      name="email" />
                   </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="service-details-icon-box hvr-zoom-2-wrap d-flex">
-                    <div class="service-details-icon-box-icon hvr-zoom-2 hvr-zoom-2-dark">
-                      <i class="icon-42"></i>
-                    </div>
-                    <div class="service-details-icon-box-content">
-                      <h4 class="service-details-icon-box-title mb_10">
-                        Hospice Care
-                      </h4>
-                      <p class="service-details-icon-box-desc">
-                        Mauris magna sit elementum facilis <br />
-                        etra lacusacphar.
-                      </p>
-                    </div>
+                  <div class="form-group">
+                    <i class="fas fa-lock-open"></i><input type="password" placeholder="Enter Password" required=""
+                      name="password" />
                   </div>
-                </div>
-              </div>
-              <h4 class="service-details-title2 mb_25">Download Resources</h4>
-              <div class="service-details-download-wrap mb_20 d-flex align-items-center justify-content-between">
-                <div class="d-flex">
-                  <div class="service-details-download-wrap-icon">
-                    <i class="icon-44"></i>
+                  <div class="form-group btn-box">
+                    <button type="submit" class="theme-btn btn-style-one">
+                      <span class="btn-title">Register</span>
+                    </button>
                   </div>
-                  <div class="service-details-download-wrap-content flex-grow-1">
-                    <h5 class="service-details-download-wrap-title">
-                      Company Briefing Update for the Year
-                    </h5>
-                    <p class="service-details-download-wrap-info">
-                      Pdf(160kb)
-                    </p>
-                  </div>
-                </div>
-                <div class="link-btn">
-                  <a class="service-details-download-wrap-btn" href="#">Download</a>
-                </div>
-              </div>
-              <div class="service-details-download-wrap mb_20 d-flex align-items-center justify-content-between">
-                <div class="d-flex">
-                  <div class="service-details-download-wrap-icon">
-                    <i class="icon-44"></i>
-                  </div>
-                  <div class="service-details-download-wrap-content flex-grow-1">
-                    <h5 class="service-details-download-wrap-title">
-                      Company Briefing Update for the Year
-                    </h5>
-                    <p class="service-details-download-wrap-info">
-                      Pdf(160kb)
-                    </p>
-                  </div>
-                </div>
-                <div class="link-btn">
-                  <a class="service-details-download-wrap-btn" href="#">Download</a>
+                </form>
+                <div class="text">
+                  <p><span>*</span>You must be a free registered user.</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <section class="feature-section-two mt-0">
+        <div class="auto-container">
+          <div class="row">
+            <div class="col-lg-6 feature-block-two style-two">
+              <div class="shape-box">
+                <div class="inner-box">
+                  <div class="icon">
+                    <img src="/assets/images/icons/icon-9.png" alt="" / loading="lazy">
+                  </div>
+                  <h4>Become a Partner of Lovegiver</h4>
+                  <div class="text">
+                    To take a trivial example, which of us undertakes
+                    <br />laborious physical exercise.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 feature-block-two style-two">
+              <div class="shape-box">
+                <div class="inner-box">
+                  <div class="icon">
+                    <img src="/assets/images/icons/icon-10.png" alt="" / loading="lazy">
+                  </div>
+                  <h4>Career Opportunities in Lovegiver</h4>
+                  <div class="text">
+                    Who chooses to enjoy a pleasure that has no one
+                    <br />annoying consequences.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
     <footer class="footer-1">
       <div class="footer-1-top">
         <div class="auto-container">
           <div class="footer-1-top-content d-flex align-items-center justify-content-between">
             <div class="logo">
-              <a href="/"><img src="assets/images/logo-light.png" alt="" style="width: 140px" /></a>
+              <a href="/"><img src="/assets/images/logo-light.png" alt="" style="width: 140px" /></a>
             </div>
             <ul class="footer-1-social-icon d-flex align-items-center">
               <li>
@@ -509,7 +448,7 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="assets/js/site.js"></script>
+  <script src="/assets/js/site.js"></script>
 </body>
 
 </html>
