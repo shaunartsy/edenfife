@@ -6294,3 +6294,31 @@ li.accordion.active-block {
     width: 100%;
   }
 }
+
+@media only screen and (max-width: 767px) {
+  .service-1-section,
+  .about-1-section,
+  .fundraise-1-section,
+  .why-chooseus-1-section,
+  .testimonial-1-section,
+  .blog-1-section,
+  .footer-1-middle {
+    padding-top: 60px !important;
+    padding-bottom: 40px !important;
+  }
+
+  .video-1-section {
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+  }
+
+  .team-1-wrapper {
+    padding-top: 80px !important;
+    padding-bottom: 60px !important;
+    margin-top: 0 !important;
+  }
+
+  .section_heading {
+    margin-bottom: 30px !important;
+  }
+}
