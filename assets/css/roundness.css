@@ -838,6 +838,14 @@ form.estimate-form-1-form input {
     display: block !important;
   }
 
+  .sticky-header .mobile-nav-toggler {
+    display: block !important;
+  }
+
+  .sticky-icon-bar {
+    filter: invert(1) brightness(0);
+  }
+
   .header-upper .logo-box {
     padding: 0 !important;
     margin: 0 !important;
@@ -924,6 +932,19 @@ form.estimate-form-1-form input {
 
   .video-banner-slide {
     width: 100% !important;
+    height: 800px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .banner-shape img {
+    width: 200%;
+    max-width: none;
+    height: auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   /* Widen content by reducing margins significantly */
