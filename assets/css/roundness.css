@@ -10,8 +10,8 @@
 
 /* Fix missing Next.js font variables */
 :root {
-  --poppins: "__PT_Sans_438d47", "__PT_Sans_Fallback_438d47", sans-serif;
-  --pT_Serif: "__PT_Serif_7dbc8c", "__PT_Serif_Fallback_7dbc8c", serif;
+  --poppins: "PT Sans", sans-serif;
+  --pT_Serif: "PT Serif", serif;
 }
 
 body {
@@ -196,7 +196,7 @@ img {
 
 /* Change tilted hover background from pink to light green */
 .service-1-block:before {
-  background: #A8D97A !important;
+  background: #a8d97a !important;
 }
 
 /* Service 2 blocks */
@@ -449,7 +449,6 @@ ul.category-widget-list a {
   margin-top: 40px !important;
 }
 
-
 /* =========================================================
    20. PAGE TITLE / BREADCRUMB
    ========================================================= */
@@ -550,4 +549,274 @@ form.estimate-form-1-form input {
 
 .contact-map iframe {
   border-radius: 30px;
+}
+
+/* =========================================================
+   27. GLOBAL BUTTON FIX
+   ========================================================= */
+
+.btn-1,
+.btn-1.btn-small,
+.btn-1.btn-large {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.btn-1 i {
+  position: static !important;
+  top: auto !important;
+  line-height: normal !important;
+  margin-left: 10px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  height: auto !important;
+}
+
+.btn-1 span {
+  top: 50% !important;
+  left: 50% !important;
+}
+
+/* =========================================================
+   28. GLOBAL RESPONSIVENESS FIXES
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+  /* Reduce massive paddings and margins */
+  .section-padding {
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+  }
+
+  .pt_120 {
+    padding-top: 80px !important;
+  }
+
+  .pb_120 {
+    padding-bottom: 80px !important;
+  }
+
+  .pt_100 {
+    padding-top: 60px !important;
+  }
+
+  .pb_100 {
+    padding-bottom: 60px !important;
+  }
+
+  .mt_120 {
+    margin-top: 80px !important;
+  }
+
+  .mb_120 {
+    margin-bottom: 80px !important;
+  }
+
+  .mt_100 {
+    margin-top: 60px !important;
+  }
+
+  .mb_100 {
+    margin-bottom: 60px !important;
+  }
+
+  /* Optimize feature images and overflowing elements */
+  .feature-image img,
+  .about-1-image-wrap img,
+  .banner-feature-image img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Prevent horizontal scrolling on mobile */
+  html,
+  body {
+    overflow-x: hidden !important;
+    width: 100% !important;
+  }
+
+  /* Form elements spacing on tablets/mobile */
+  .contact-form .form-group,
+  .estimate-form-1-form .form-group {
+    width: 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 15px !important;
+  }
+
+  .estimate-form-1-wrap {
+    padding: 40px 20px !important;
+  }
+
+  /* Font scales */
+  .fs_60 {
+    font-size: 40px !important;
+    line-height: 1.3 !important;
+  }
+
+  .fs_50 {
+    font-size: 36px !important;
+    line-height: 1.3 !important;
+  }
+
+  .fs_40 {
+    font-size: 30px !important;
+    line-height: 1.3 !important;
+  }
+
+  /* Disable random breaks inside headers causing weird gaps */
+  h1 br,
+  h2 br,
+  h3 br,
+  h4 br,
+  h5 br,
+  h6 br,
+  .section_heading_title_big br {
+    display: none !important;
+  }
+
+  /* Re-space overlapping cards in grids */
+  .testimonial-1-block,
+  .service-1-block,
+  .project-1-block,
+  .funfact-1-block,
+  .team-1-block {
+    margin-bottom: 30px !important;
+  }
+
+  /* Shrink Maps */
+  .contact-map iframe {
+    height: 300px !important;
+  }
+
+  /* Text align overrides for small screens where things float strangely */
+  .text-lg-end {
+    text-align: left !important;
+  }
+
+  .justify-content-lg-end {
+    justify-content: flex-start !important;
+  }
+}
+
+@media (max-width: 767px) {
+
+  /* Phone level paddings and margins */
+  .section-padding {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+  }
+
+  .pt_120,
+  .pt_100 {
+    padding-top: 50px !important;
+  }
+
+  .pb_120,
+  .pb_100 {
+    padding-bottom: 50px !important;
+  }
+
+  .mt_120,
+  .mt_100 {
+    margin-top: 50px !important;
+  }
+
+  .mb_120,
+  .mb_100 {
+    margin-bottom: 50px !important;
+  }
+
+  /* Hide header top on tiny screens to save space */
+  .header-top-1 {
+    display: none !important;
+  }
+
+  /* Typography scale */
+  h1 {
+    font-size: 36px !important;
+    line-height: 1.2 !important;
+  }
+
+  h2 {
+    font-size: 28px !important;
+    line-height: 1.3 !important;
+  }
+
+  h3 {
+    font-size: 24px !important;
+    line-height: 1.4 !important;
+  }
+
+  .fs_60 {
+    font-size: 32px !important;
+  }
+
+  .fs_50 {
+    font-size: 28px !important;
+  }
+
+  .fs_40 {
+    font-size: 24px !important;
+  }
+
+  /* Grid gaps / Alignment fixes */
+  .row {
+    margin-left: -15px !important;
+    margin-right: -15px !important;
+  }
+
+  /* Contact page specific phone adjustments */
+  .contact-info-1 li {
+    display: block;
+    margin-bottom: 10px;
+    width: 100% !important;
+  }
+
+  /* Breadcrumbs shrink */
+  .page-title h1 {
+    font-size: 38px !important;
+  }
+
+  .bredcrumb-wrap {
+    padding: 15px 0 !important;
+  }
+
+  /* Slider navs hidden on phones favoring touch swiping */
+  .swiper-button-next,
+  .swiper-button-prev,
+  .owl-nav {
+    display: none !important;
+  }
+}
+
+@media (max-width: 575px) {
+
+  /* Further squeeze text bounds */
+  .section_heading_title_big {
+    font-size: 26px !important;
+    line-height: 1.4 !important;
+  }
+
+  /* Outer container padding */
+  .auto-container {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  /* Fix logo width to not crush nav */
+  .header-upper .logo img {
+    max-width: 140px !important;
+    height: auto !important;
+  }
+
+  /* Squeeze Buttons */
+  .btn-1,
+  .btn-1.btn-small,
+  .btn-1.btn-large {
+    padding: 12px 20px !important;
+    font-size: 14px !important;
+  }
 }
