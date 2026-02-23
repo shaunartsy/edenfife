@@ -304,5 +304,135 @@
       bannerLinkbox.style.opacity = "1";
       bannerLinkbox.style.transform = "translateY(0)";
     }
+
+    /* ========================================
+           12. CONTACT FORM HANDLING
+           Using Formspree to send to admin@edenfife.com
+        ======================================== */
+    var contactForms = document.querySelectorAll(
+      'form[id="contact-form"], .login-form, .register-form, .appointment-form-widget form',
+    );
+    contactForms.forEach(function (form) {
+      // Set Formspree endpoint (mapped to admin@edenfife.com)
+      form.setAttribute("action", "https://formspree.io/f/mqaeapne");
+      form.setAttribute("method", "POST");
+
+      form.addEventListener("submit", function (e) {
+        // Formspree handles the submission, but we can add UI feedback here if needed
+        var btn = form.querySelector('button[type="submit"]');
+        if (btn) {
+          var originalText = btn.innerHTML;
+          btn.innerHTML = "Sending...";
+          btn.disabled = true;
+
+          // Note: Formspree will redirect to its success page by default.
+          // To stay on page, we would need to use AJAX (fetch), but redirect is often safer for static sites.
+        }
+      });
+    });
+
+    /* ========================================
+           13. COOKIE CONSENT BANNER
+        ======================================== */
+    if (!localStorage.getItem("cookieConsent")) {
+      var cookieBanner = document.createElement("div");
+      cookieBanner.id = "cookie-consent-banner";
+      cookieBanner.innerHTML = `
+        <div class="cookie-content">
+          <div class="cookie-text">
+            <i class="fas fa-cookie-bite"></i>
+            <p>We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies. <a href="/privacy-policy">Learn more</a></p>
+          </div>
+          <div class="cookie-actions">
+            <button id="decline-cookies" class="btn-cookie-decline">Decline</button>
+            <button id="accept-cookies" class="btn-1 btn-small">Accept All <span></span></button>
+          </div>
+        </div>
+      `;
+      document.body.appendChild(cookieBanner);
+
+      // Add styles dynamically to keep roundness.css clean or use this for immediate effect
+      var style = document.createElement("style");
+      style.innerHTML = `
+        #cookie-consent-banner {
+          position: fixed;
+          bottom: -100px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 90%;
+          max-width: 600px;
+          background: #ffffff;
+          box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+          border-radius: 20px;
+          padding: 20px 25px;
+          z-index: 10000;
+          transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+          opacity: 0;
+        }
+        #cookie-consent-banner.show {
+          bottom: 30px;
+          opacity: 1;
+        }
+        .cookie-content {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 20px;
+        }
+        .cookie-text {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          color: var(--grey-700, #444);
+          font-size: 14px;
+          line-height: 1.5;
+        }
+        .cookie-text i {
+          font-size: 24px;
+          color: var(--theme-color, #23b26d);
+        }
+        .cookie-text p { margin: 0; }
+        .cookie-text a { color: var(--theme-color, #23b26d); font-weight: 600; text-decoration: underline; }
+        .cookie-actions {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          flex-shrink: 0;
+        }
+        .btn-cookie-decline {
+          background: transparent;
+          border: none;
+          color: var(--grey-600, #777);
+          font-size: 14px;
+          font-weight: 600;
+          cursor: pointer;
+          padding: 5px 10px;
+        }
+        @media (max-width: 767px) {
+          .cookie-content { flex-direction: column; text-align: center; }
+          .cookie-text { flex-direction: column; gap: 10px; }
+          .cookie-actions { width: 100%; justify-content: center; }
+          #cookie-consent-banner.show { bottom: 20px; }
+        }
+      `;
+      document.head.appendChild(style);
+
+      // Show banner with a slight delay for "seamless" feel
+      setTimeout(function () {
+        cookieBanner.classList.add("show");
+      }, 1500);
+
+      document.getElementById("accept-cookies").addEventListener("click", function () {
+        localStorage.setItem("cookieConsent", "accepted");
+        cookieBanner.classList.remove("show");
+        setTimeout(() => cookieBanner.remove(), 600);
+      });
+
+      document.getElementById("decline-cookies").addEventListener("click", function () {
+        localStorage.setItem("cookieConsent", "declined");
+        cookieBanner.classList.remove("show");
+        setTimeout(() => cookieBanner.remove(), 600);
+      });
+    }
   });
 })();
