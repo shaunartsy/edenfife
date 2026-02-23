@@ -314,7 +314,7 @@
     );
     contactForms.forEach(function (form) {
       // Set Formspree endpoint (mapped to admin@edenfife.com)
-      form.setAttribute("action", "https://formspree.io/f/mqaeapne");
+      form.setAttribute("action", "https://formspree.io/f/mojnpwnn");
       form.setAttribute("method", "POST");
 
       form.addEventListener("submit", function (e) {

@@ -932,8 +932,7 @@ form.estimate-form-1-form input {
     max-width: 100% !important;
     margin: 0 !important;
     box-sizing: border-box !important;
-    border-radius: 0 0 20px 20px !important;
-    /* Slightly smaller roundness on mobile */
+    border-radius: 0 !important;
   }
 
   .video-banner-slide {
@@ -945,7 +944,7 @@ form.estimate-form-1-form input {
   }
 
   .banner-shape img {
-    width: 200%;
+    width: 180%;
     max-width: none;
     height: auto;
     position: relative;
