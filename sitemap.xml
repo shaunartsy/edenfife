@@ -11,7 +11,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://edenfife.com/services-1</loc>
+    <loc>https://edenfife.com/services</loc>
     <lastmod>2026-02-23</lastmod>
     <priority>0.80</priority>
   </url>
@@ -21,12 +21,12 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://edenfife.com/career</loc>
+    <loc>https://edenfife.com/careers</loc>
     <lastmod>2026-02-23</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://edenfife.com/blog-grid</loc>
+    <loc>https://edenfife.com/news</loc>
     <lastmod>2026-02-23</lastmod>
     <priority>0.70</priority>
   </url>
@@ -51,7 +51,7 @@
     <priority>0.50</priority>
   </url>
   <url>
-    <loc>https://edenfife.com/blog-details</loc>
+    <loc>https://edenfife.com/news-details</loc>
     <lastmod>2026-02-23</lastmod>
     <priority>0.50</priority>
   </url>
