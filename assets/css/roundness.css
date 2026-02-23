@@ -778,6 +778,12 @@ form.estimate-form-1-form input {
     margin-right: -15px !important;
   }
 
+  /* Increased horizontal margins for all content except hero */
+  .auto-container {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+
   /* Contact page specific phone adjustments */
   .contact-info-1 li {
     display: block;
@@ -810,10 +816,10 @@ form.estimate-form-1-form input {
     line-height: 1.4 !important;
   }
 
-  /* Outer container padding */
+  /* Outer container padding - Increased for mobile margins */
   .auto-container {
-    padding-left: 15px !important;
-    padding-right: 15px !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
   }
 
   /* Fix logo width to not crush nav */
@@ -972,5 +978,77 @@ form.estimate-form-1-form input {
   .banner-section .banner-inner-visible a.btn-1 {
     font-size: 13px !important;
     padding: 10px 20px !important;
+  }
+
+  /* Lower contact section image completely behind footer */
+  .contact-1-image-wrap {
+    margin-bottom: -60px !important;
+    transform: translateY(20px) !important;
+    position: relative;
+    z-index: 1;
+  }
+
+  .footer-1 {
+    position: relative;
+    z-index: 5;
+  }
+
+  /* Footer Neatness overrides */
+  .footer-1-top {
+    padding: 30px 0 10px !important;
+  }
+
+  .footer-1-top-content {
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .footer-1-top-content .logo {
+    margin-top: 0 !important;
+    margin-bottom: 15px !important;
+  }
+
+  .footer-1-social-icon {
+    margin: 0 !important;
+    justify-content: center !important;
+  }
+
+  .footer-1-social-icon li {
+    margin-left: 7px !important;
+    margin-right: 7px !important;
+  }
+
+  .footer-1-middle {
+    padding: 50px 0 30px !important;
+  }
+
+  .footer-bottom {
+    padding: 20px 0 !important;
+    font-size: 12px !important;
+  }
+
+  .about-widget-1,
+  .link-widget-1,
+  .contact-widget-1 {
+    margin-bottom: 30px !important;
+  }
+
+  /* Sidebar Logo Resize & Spacing */
+  .mobile-menu .nav-logo {
+    margin-bottom: 30px !important;
+    margin-top: 20px !important;
+    text-align: center !important;
+  }
+
+  .mobile-menu .nav-logo img {
+    max-width: 130px !important;
+    height: auto !important;
+  }
+
+  /* Hidden Sidebar Logo Resize */
+  .hidden-sidebar .logo img {
+    max-width: 150px !important;
+    height: auto !important;
   }
 }
