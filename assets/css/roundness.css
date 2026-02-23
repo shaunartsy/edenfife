@@ -154,6 +154,16 @@ img {
 /* Main header wrapper gets a very subtle bottom radius on scroll */
 .main-header .header-upper {
   border-radius: 0 0 20px 20px;
+  padding: 0 !important;
+}
+
+.main-header .header-upper .inner-container {
+  padding: 0 !important;
+}
+
+.main-header .logo img {
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 /* Dropdown menus — already have radius but make consistent */
@@ -446,7 +456,7 @@ ul.category-widget-list a {
 }
 
 .footer-1-top-content .logo {
-  margin-top: 40px !important;
+  margin-top: 80px !important;
 }
 
 /* =========================================================
@@ -818,5 +828,128 @@ form.estimate-form-1-form input {
   .btn-1.btn-large {
     padding: 12px 20px !important;
     font-size: 14px !important;
+  }
+}
+
+@media (max-width: 1200px) {
+
+  /* Force Sticky Nav and Mobile Header full touch */
+  .sticky-header {
+    display: block !important;
+  }
+
+  .header-upper .logo-box {
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex !important;
+    align-self: stretch !important;
+    /* Force stretch on cross axis */
+    align-items: stretch !important;
+    justify-content: flex-start !important;
+  }
+
+  .header-upper .logo,
+  .sticky-header .logo,
+  .header-upper .logo a {
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex !important;
+    align-self: stretch !important;
+    /* Force stretch */
+    align-items: stretch !important;
+    width: 100%;
+  }
+
+  .sticky-header .logo img,
+  .header-upper .logo img {
+    height: 100% !important;
+    max-height: none !important;
+    /* Don't restrict max height, let it fill */
+    width: auto !important;
+    max-width: 220px !important;
+    object-fit: cover !important;
+    object-position: left center !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: block !important;
+  }
+
+  .header-upper .inner-container {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    align-items: stretch !important;
+    height: 100%;
+  }
+
+  .header-upper .auto-container {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    height: 100%;
+  }
+
+  /* Remove all margins and paddings on nav bar to keep it tight */
+  .main-header,
+  .main-header .header-upper,
+  .main-header .nav-outer,
+  .sticky-header {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .main-header .header-upper,
+  .main-header .nav-outer,
+  .sticky-header {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+}
+
+@media (max-width: 767px) {
+
+  /* Ensure hero width is perfectly sized to screen */
+  .banner-section {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    border-radius: 0 0 20px 20px !important;
+    /* Slightly smaller roundness on mobile */
+  }
+
+  .video-banner-slide {
+    width: 100% !important;
+  }
+
+  /* Widen content by reducing margins significantly */
+  .banner-section .banner-inner-visible {
+    max-width: 95% !important;
+    width: 100% !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    margin: 0 auto !important;
+  }
+
+  /* Hero section mobile overrides */
+  .banner-section .banner-inner-visible .text {
+    font-size: 15px !important;
+    line-height: 1.5 !important;
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+  }
+
+  .banner-section .banner-linkbox-visible {
+    margin-top: 10px !important;
+  }
+
+  .banner-section .banner-linkbox-visible .btn-large,
+  .banner-section .banner-inner-visible a.btn-1 {
+    font-size: 13px !important;
+    padding: 10px 20px !important;
   }
 }
