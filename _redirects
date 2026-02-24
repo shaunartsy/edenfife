@@ -1,0 +1,36 @@
+# Specific path for home
+/home    /index.html   200
+
+# Specific path for about
+/about   /about.html   200
+
+# Optional: Redirect the old .html extension to the pretty version
+/contact  /contact.html  200
+
+/services  /services.html  200
+
+/news  /news.html  200
+
+/careers  /careers.html  200
+
+/appointment  /appointment.html  200
+
+/service-details  /service-details.html  200
+
+/supporting-independence  /supporting-independence.html  200
+
+/care-standards  /care-standards.html  200
+
+/news-details  /news-details.html  200
+
+/fighting-loneliness  /fighting-loneliness.html  200
+
+/404  /404.html  200
+
+/privacy  /privacy.html  200
+
+/terms  /terms.html  200
+
+/disclaimer /disclaimer.html  200
+
+/* /404.html  404
