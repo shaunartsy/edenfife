@@ -35845,3 +35845,16 @@ form.newsletter-1-form input[type="text"] {
     justify-content: center;
   }
 }
+
+/* Fade-and-Slide Reveal Effect */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: opacity, transform;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}

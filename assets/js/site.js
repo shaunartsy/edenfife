@@ -432,5 +432,27 @@
         setTimeout(() => cookieBanner.remove(), 600);
       });
     }
+
+    /* ========================================
+           14. SECTION REVEAL ANIMATION
+        ======================================== */
+    var revealElements = document.querySelectorAll(".reveal");
+    if (revealElements.length > 0) {
+      var revealObserver = new IntersectionObserver(
+        function (entries, observer) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("active");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.15 }
+      );
+
+      revealElements.forEach(function (el) {
+        revealObserver.observe(el);
+      });
+    }
   });
 })();
