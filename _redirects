@@ -1,36 +1,59 @@
 # Specific path for home
 /home    /index.html   200
+/index.html /home  301!
 
 # Specific path for about
 /about   /about.html   200
+/about.html /about  301!
 
-# Optional: Redirect the old .html extension to the pretty version
-/contact  /contact.html  200
-
+# Services
 /services  /services.html  200
+/services.html /services  301!
 
+# News
 /news  /news.html  200
+/news.html /news  301!
 
+# Careers
 /careers  /careers.html  200
+/careers.html /careers  301!
 
+# Appointment
 /appointment  /appointment.html  200
+/appointment.html /appointment  301!
 
+# Service Details
 /service-details  /service-details.html  200
+/service-details.html /service-details  301!
 
+# Supporting Independence
 /supporting-independence  /supporting-independence.html  200
+/supporting-independence.html /supporting-independence  301!
 
+# Care Standards
 /care-standards  /care-standards.html  200
+/care-standards.html /care-standards  301!
 
+# News Details
 /news-details  /news-details.html  200
+/news-details.html /news-details  301!
 
+# Fighting Loneliness
 /fighting-loneliness  /fighting-loneliness.html  200
+/fighting-loneliness.html /fighting-loneliness  301!
 
-/404  /404.html  200
-
+# Privacy
 /privacy  /privacy.html  200
+/privacy.html /privacy  301!
 
+# Terms
 /terms  /terms.html  200
+/terms.html /terms  301!
 
+# Disclaimer
 /disclaimer /disclaimer.html  200
+/disclaimer.html /disclaimer  301!
 
+# 404
+/404  /404.html  200
 /* /404.html  404

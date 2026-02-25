@@ -265,31 +265,29 @@
 
     /* ========================================
            10. LINK REWRITING (.html extensions)
-           Convert /about -> about.html etc. for static hosting
+           DISABLED: Using server-side redirects for pretty URLs
         ======================================== */
-    var allLinks = document.querySelectorAll("a[href]");
-    allLinks.forEach(function (link) {
-      var href = link.getAttribute("href");
-      // Skip external links, anchors, mailto, tel, and already-extended paths
-      if (
-        !href ||
-        href.startsWith("http") ||
-        href.startsWith("#") ||
-        href.startsWith("mailto:") ||
-        href.startsWith("tel:") ||
-        href.includes(".")
-      )
-        return;
-      // Convert /page-name to page-name.html
-      if (href.startsWith("/")) {
-        var pageName = href.substring(1);
-        if (pageName === "" || pageName === "/") {
-          link.setAttribute("href", "index.html");
-        } else {
-          link.setAttribute("href", pageName + ".html");
-        }
-      }
-    });
+    // var allLinks = document.querySelectorAll("a[href]");
+    // allLinks.forEach(function (link) {
+    //   var href = link.getAttribute("href");
+    //   if (
+    //     !href ||
+    //     href.startsWith("http") ||
+    //     href.startsWith("#") ||
+    //     href.startsWith("mailto:") ||
+    //     href.startsWith("tel:") ||
+    //     href.includes(".")
+    //   )
+    //     return;
+    //   if (href.startsWith("/")) {
+    //     var pageName = href.substring(1);
+    //     if (pageName === "" || pageName === "/") {
+    //       link.setAttribute("href", "index.html");
+    //     } else {
+    //       link.setAttribute("href", pageName + ".html");
+    //     }
+    //   }
+    // });
 
     /* ========================================
            11. BANNER ANIMATION CLASSES
