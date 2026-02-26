@@ -28,6 +28,12 @@
   <meta name="description"
     content="Eden Fife Healthcare provides compassionate, person-centred home and community support services for older adults across Fife, Scotland." />
   <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="66x59" />
+
+  <!-- Preload Critical Assets -->
+  <link rel="preload" as="video" href="assets/images/main-slider/hero_video.mp4" type="video/mp4" />
+  <link rel="preload" as="image" href="assets/images/logo.png" />
+  <link rel="preload" as="image" href="assets/images/shape/banner-shape.svg" />
+
   <link rel="stylesheet" href="assets/css/roundness.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
@@ -119,7 +125,7 @@
           <div class="inner-container d-flex align-items-center justify-content-between">
             <div class="logo-box">
               <div class="logo">
-                <a href="/home"><img src="assets/images/logo.png" alt="" /></a>
+                <a href="/home"><img src="assets/images/logo.png" alt="Eden Fife Healthcare" fetchpriority="high" /></a>
               </div>
             </div>
             <div class="middle-column">
@@ -155,7 +161,7 @@
             <div class="inner-container d-flex align-items-center justify-content-between">
               <div class="logo-box">
                 <div class="logo">
-                  <a href="/home"><img src="assets/images/logo.png" alt="" /></a>
+                  <a href="/home"><img src="assets/images/logo.png" alt="" fetchpriority="high" /></a>
                 </div>
               </div>
               <div class="middle-column">
@@ -189,7 +195,7 @@
         <div class="close-btn"><i class="fal fa-times"></i></div>
         <nav class="menu-box">
           <div class="nav-logo">
-            <a href="/home"><img src="assets/images/logo-light.png" alt="" /></a>
+            <a href="/home"><img src="assets/images/logo-light.png" alt="" fetchpriority="low" /></a>
           </div>
           <div class="menu-outer">
             <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
@@ -229,7 +235,7 @@
           <span class="fal fa-times"></span>
         </div>
         <div class="logo">
-          <a href="/home"><img src="assets/images/logo.png" alt="" /></a>
+          <a href="/home"><img src="assets/images/logo.png" alt="" loading="lazy" /></a>
         </div>
         <div class="content">
           <div class="about-widget-two sidebar-widget">
@@ -275,7 +281,8 @@
     </section>
     <section class="jsx-66c15def33d5a3ce banner-section">
       <div class="jsx-66c15def33d5a3ce video-banner-slide">
-        <video autoplay="" muted="" loop="" playsinline="" class="jsx-66c15def33d5a3ce banner-bg-video">
+        <video autoplay="" muted="" loop="" playsinline="" preload="auto" fetchpriority="high"
+          poster="assets/images/resource/image-4.jpg" class="jsx-66c15def33d5a3ce banner-bg-video">
           <source src="assets/images/main-slider/hero_video.mp4" type="video/mp4" />
         </video>
         <div class="jsx-66c15def33d5a3ce banner-video-overlay"></div>
@@ -1149,8 +1156,8 @@
     </footer>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="assets/js/site.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+  <script src="assets/js/site.js" defer></script>
 </body>
 
 </html>
