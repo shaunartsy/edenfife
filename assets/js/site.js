@@ -234,7 +234,7 @@
     /* ========================================
            9. COUNTER ANIMATION
         ======================================== */
-    var countElements = document.querySelectorAll(".count-text");
+    var countElements = document.querySelectorAll(".count-text, .funfact-1-number");
     var countAnimated = new Set();
 
     function animateCounters() {

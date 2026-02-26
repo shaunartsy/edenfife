@@ -30479,7 +30479,7 @@ ul.header-top-1-contact-info li a:hover {
 }
 
 .main-menu .navigation>li>a:hover {
-  color: var(--theme-color);
+  color: var(--green-primary);
 }
 
 .main-menu .navigation>li>ul {
@@ -30560,7 +30560,7 @@ ul.header-top-1-contact-info li a:hover {
 }
 
 .main-menu .navigation>li>ul>li>a:hover {
-  color: var(--theme-color);
+  color: var(--green-primary);
 }
 
 .main-menu .navigation>li>ul>li.dropdown>a:after {
@@ -30641,7 +30641,7 @@ ul.header-top-1-contact-info li a:hover {
 }
 
 .main-menu .navigation>li>ul>li>ul>li>a:hover {
-  color: var(--theme-color);
+  color: var(--green-primary);
 }
 
 .main-menu .navigation>li>ul>li>ul>li.dropdown>a:after {
@@ -32923,13 +32923,13 @@ section.funfact-1-section {
 
 h2.funfact-1-number-prefix {
   font-size: 60px;
-  color: var(--theme-color);
+  color: #fff;
   position: relative;
   top: -2px;
 }
 
 .funfact-1-block h2.funfact-1-number {
-  color: var(--theme-color);
+  color: #fff;
   font-family: var(--pT_Serif);
   font-size: 60px;
 }
