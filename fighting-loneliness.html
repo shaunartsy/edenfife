@@ -16,6 +16,10 @@
     <link rel="stylesheet" href="assets/css/roundness.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+
+    <!-- Preload Critical Assets -->
+    <link rel="preload" as="image" href="assets/images/background/page-title3.jpg" />
+    <link rel="preload" as="image" href="assets/images/logo.png" />
 </head>
 
 <body>
@@ -173,7 +177,8 @@
                     <span class="fal fa-times"></span>
                 </div>
                 <div class="logo">
-                    <a href="/home"><img src="assets/images/logo.png" alt="" /></a>
+                    <a href="/home"><img src="assets/images/logo.png" alt="Eden Fife Healthcare"
+                            fetchpriority="high" /></a>
                 </div>
                 <div class="content">
                     <div class="about-widget-two sidebar-widget">
@@ -188,8 +193,8 @@
                         <div class="widget-title">News &amp; Updates</div>
                         <div class="post-wrapper">
                             <div class="image">
-                                <a href="/supporting-independence"><img src="assets/images/resource/blog-1.jpg"
-                                        alt="" loading="lazy"></a>
+                                <a href="/supporting-independence"><img src="assets/images/resource/blog-1.jpg" alt=""
+                                        loading="lazy"></a>
                             </div>
                             <div class="category">Home Care</div>
                             <h4>
@@ -413,8 +418,7 @@
                 <div class="auto-container">
                     <div class="footer-1-top-content d-flex align-items-center justify-content-between">
                         <div class="logo">
-                            <a href="/home"><img src="assets/images/logo-light.png" alt=""
-                                    style="width: 140px" /></a>
+                            <a href="/home"><img src="assets/images/logo-light.png" alt="" style="width: 140px" /></a>
                         </div>
                         <ul class="footer-1-social-icon d-flex align-items-center">
                             <li>
@@ -521,8 +525,8 @@
         </footer>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="assets/js/site.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="assets/js/site.js" defer></script>
 </body>
 
 </html>

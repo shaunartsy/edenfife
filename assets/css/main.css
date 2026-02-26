@@ -33938,6 +33938,7 @@ h4.event-2-title {
   position: relative;
   padding: 126px 0;
   text-align: center;
+  background-color: var(--deep-purple);
 }
 
 .page-title h1 {
